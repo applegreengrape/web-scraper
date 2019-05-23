@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "jade-goodluck-nlp",
+  "private_key_id": "a7b34c52e892615913f30208c77c6d29bcfd77e5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrOl8cy+r0M+AP\nOUjCuBDsiBLcE0DNB0VbF1O7Gj85j/s3cAJfFgK/6hpUDcRVHiFqOiu4HC87+YOM\nHf1EUq82ys/XY7+RQZQk1ksE3iplSNb6pl0E1N44r+TTmP75geGdt0b/tMtbWbhl\nrKnUHI7AC2rEyokth1t3KpAqpcOajk4JX//5xf4KLz75Us7gaoJkZkqHYXR/VN3m\nIxb857L3lOPr+xLSJsX//S+Q1O/FUi+VgPv0/3+rBhQ/BFrfh+GI4jeuMsqFDtuh\ngYIFg62C/Jk5RoZ5+xpaGJIfXDUAq1a7QjSyHNHRswhiw/MXsiGRT0TQh1hgbps0\nfuEb2ah1AgMBAAECggEAGJPdWSXQCNN1YtoHHqQLEdiKVHqS/5r+ko+rnhyrXJjV\nJ2T1gi6HoIJ62vvK5ajYhQXqhpfNE9/ByRf45Zi0u7mq0bDoq3HtUMhNplo5XaZx\n7TJ6AZqIdzyQLOs2FhxVhSzsjQGneupK9JUvH1omB1zcK3ki7Z0TPOyoGucGR6XP\nCQ028hwIA0hLyjpTvJpYUEFRUI5eNU+MD1Zoi/sQ9NZ67Ad/lr06yBpFO9OZWWxW\nqsailqEPrOwohe6HzPcATzLc4HRTMacqfhV6iTTYR7ZwhiynFCHP9t8xnO5cwdt2\nNbHq5sMUjezNPol0i5eoMQVgk6vZFnPDlSN8ucxoIQKBgQDph6ak8l36I1LmRtYI\ncr3qeyN4JPe7QWAqAHm/+IlVVX+eZQd74qrkE664RDCpyBu6CJApRNfkv2X0Vujo\nN+4pmARQ2WudSDTvm/Ifj2KPninw8CmIX5HacGhU3b9t+6+lNf+p/E79rW8l0fBl\ntJJopNXwg/2ccev1f1ao4/f0rQKBgQC7tBcGhXYN4XbIXkjoGADElHIalgTZOhkh\nwyREh0ANIyxh86HEpe4Vpb1hVdE5y/bbrkT1RQYK0ut+oqf8slr0whvdiuoTCAv2\n0ZwakjsXunVqoTMOWwv8RJr43VuG+r6tpuSHev7b+qVHTUo6teAhMD971tqlsJpg\nc4P891Oz6QKBgQCuBp6SsOKDcytl20fIh+krAZSPBc1ux+snoa8Y9dcxtkMiAFux\nYFrFGD3Np1M0UqEG4za66kiQeGk7ykBKPNPIPzaIIV3mmVaJcIbgKfPi3pSWrgHl\nVILWa4n0JENxbGuaDEF3pUQgGsyHPImO4R9xx9R+JX4qxWJ3Uet8dFXlCQKBgCvq\n+TA3beXViRtcpCZZ52QXb5M04rGI3HR/2i6GjsAEKNBKVuFSCaDbBLKPh8LELGA+\nKDhTDBTgQOWCXVfMy2dVO3vckuQdD9+SL7ov2M+2et6WFQIY33cI/lGYSWANryum\nTvY8GwGRZbaHKQUPpP9e8JujK8l0xsomfQ1lORpxAoGAEwY6iWclh3Q4Ut4/svyC\nO5cis8I4HpdRGqoMGLBS/X7t+MeJz9BQ3bpiskUqBbhG5jDhYOpzVbAAvsl9vMf7\nRHEFwMeGYG3gEZlWrwCeP/BfsMgEurTao3MDTCMTcOx+AIwP32abt1nXQmljpGm3\nR0R53z+pQZZ6VNHUy/81rUc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-7psadnnzkxn9@jade-goodluck-nlp.iam.gserviceaccount.com",
+  "client_id": "116185128367795853278",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-7psadnnzkxn9%40jade-goodluck-nlp.iam.gserviceaccount.com"
+}

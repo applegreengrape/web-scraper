@@ -1,8 +1,7 @@
 package main
 
 import (
-	"encoding/csv"
-	"os"
+	"strings"
 	"time"
 	"net/http"
 	"fmt"
@@ -11,7 +10,7 @@ import (
 	"gopkg.in/jdkato/prose.v2"
 )
 
-func feed(i int) (url string){
+func feed(i int) (url string, title string){
 
 	fp := gofeed.NewParser()
 	
@@ -21,17 +20,17 @@ func feed(i int) (url string){
 		panic(err)
 	}
 
-	fmt.Println(feed.Items[i].Title, len(feed.Items))
+	title = fmt.Sprintf(feed.Items[i].Title)
 
 	url = fmt.Sprintf(feed.Items[i].Link)
 
-	return url
+	return url, title
 
 }
 
-func getContent(i int)(content string){
+func getContent(i int)(content string, url string, title string){
 	
-	url := feed(i)
+	url, title = feed(i)
 
 	req, err := http.NewRequest("GET",url, nil)
 		if err != nil {}
@@ -46,49 +45,32 @@ func getContent(i int)(content string){
 
 	s:= fmt.Sprintf(doc.Find(".StandardArticleBody_container").Text())
 	
-	return s
-}
-
-func ent(c chan [][]string){
-	for i:= 0; i < 1; i++ {
-
-	s:= getContent(i)
-
-	doc, err := prose.NewDocument(s)
-	if err != nil {}
-
-	// Iterate over the doc's named-entities:
-    for _, ent := range doc.Entities() {
-
-			data:= [][]string{{ent.Label,ent.Text}}
-
-			c <- data
-		}
-	}
-}
-
-func writetocsv(c chan [][]string){
-	file, err := os.Create("tmp.csv")
-	if err != nil {}
-
-	writer := csv.NewWriter(file)
-    defer writer.Flush()
-	 
-	for {
-		input := <- c
-		err := writer.WriteAll(input)
-		if err != nil {}
-	}
+	return s, url, title
 }
 
 func main(){
+	var v string
+	v = "June"
 
-	var c chan [][]string = make(chan [][]string)
+	for i:= 0; i < 1; i++ {
 
-	go ent(c)
-	go writetocsv(c)
+	s, url, title := getContent(i)
 
-	var input string
-  fmt.Scanln(&input)
+		fmt.Println(s)
+		fmt.Println()
+		fmt.Println(title)
+		fmt.Println(url)
 
+	doc, err := prose.NewDocument(s)
+	if err != nil {}
+	
+	// Iterate over the doc's named-entities:
+    for _, ent := range doc.Sentences() {
+
+		if strings.Contains(ent.Text, v){
+
+			fmt.Println("[==========>]",ent.Text)
+		}
+	  }
+    }
 }
